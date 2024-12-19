@@ -1,0 +1,7 @@
+<!-- yoga/templates/yoga/manage_staff.html -->
+<h2>{% if staff %}Edit{% else %}Add{% endif %} Staff</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% if staff %}Update{% else %}Add{% endif %} Staff</button>
+</form>

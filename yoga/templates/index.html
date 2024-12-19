@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Types</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Importance of Yoga</h1>
+        <p>Yoga is a physical, mental, and spiritual practice that originated in India. It helps in improving flexibility, strength, and overall wellness.</p>
+    </header>
+    
+    <section class="yoga-types">
+        <h2>Types of Yoga</h2>
+        <div class="yoga-grid">
+            <div class="yoga-item">
+                <img src="{% static 'images/Yoga1.jpg' %}" alt="Yoga Type 1">
+                <p class="yoga-name hatha"><strong>Hatha Yoga:</strong> Focuses on physical postures and breathing exercises.</p>
+            </div>
+            <div class="yoga-item">
+                <img src="{% static 'images/Yoga2.jpg' %}" alt="Yoga Type 2">
+                <p class="yoga-name vinyasa"><strong>Vinyasa Yoga:</strong> A dynamic style of yoga that connects movement and breath.</p>
+            </div>
+            <div class="yoga-item">
+                <img src="{% static 'images/Yoga3.jpg' %}" alt="Yoga Type 3">
+                <p class="yoga-name ashtanga"><strong>Ashtanga Yoga:</strong> A rigorous style with a fixed sequence of postures.</p>
+            </div>
+            <div class="yoga-item">
+                <img src="{% static 'images/Yoga4.jpg' %}" alt="Yoga Type 4">
+                <p class="yoga-name yin"><strong>Yin Yoga:</strong> Focuses on long-held postures to increase flexibility.</p>
+            </div>
+            <div class="yoga-item">
+                <img src="{% static 'images/Yoga5.png' %}" alt="Yoga Type 5">
+                <p class="yoga-name kundalini"><strong>Kundalini Yoga:</strong> Aims to awaken the dormant energy within.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="crud-navigation">
+        <h2>Manage Data</h2>
+        <div class="crud-buttons">
+            <a href="{% url 'view_students' %}" class="crud-btn view-students">View Students</a>
+            <a href="{% url 'view_staff' %}" class="crud-btn view-staff">View Staff</a>
+        </div>
+    </section>
+</body>
+</html>

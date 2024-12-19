@@ -1,0 +1,108 @@
+/* General body and text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #2e3b4e;
+}
+
+a {
+    text-decoration: none;
+    color: #3a7cbb;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2a5d8e;
+}
+
+/* Container for the student list and links */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #3a7cbb; /* Default color for 'Add New Student' */
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px; /* Adds space between buttons */
+}
+
+nav a.home-btn {
+    background-color: #e94e77; /* New color for 'Home' button */
+    margin-bottom: 20px; /* Moves 'Home' button above */
+}
+
+nav a:hover {
+    background-color: #2a5d8e;
+    transform: translateY(-2px);
+}
+
+/* Styling the student list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+ul li a {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #f79c42;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li a:hover {
+    background-color: #d67935;
+    transform: translateY(-2px);
+}
+
+/* Additional spacing */
+ul li:last-child {
+    margin-bottom: 0;
+}

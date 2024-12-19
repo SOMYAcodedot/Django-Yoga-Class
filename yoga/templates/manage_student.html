@@ -1,0 +1,7 @@
+<!-- yoga/templates/yoga/manage_student.html -->
+<h2>{% if student %}Edit{% else %}Add{% endif %} Student</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% if student %}Update{% else %}Add{% endif %} Student</button>
+</form>

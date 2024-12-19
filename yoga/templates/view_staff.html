@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Staff</title>
+    <link rel="stylesheet" href="{% static 'css/view_staff.css' %}">
+</head>
+<body>
+    <h1>Staff Members</h1>
+    <nav>
+        <a href="{% url 'home' %}" class="home-btn">Home</a>
+        <a href="{% url 'add_staff' %}">Add New Staff</a>
+    </nav>
+    <ul>
+        {% for staff in staff_list %}
+            <li>
+                {{ staff.first_name }} {{ staff.last_name }} - {{ staff.email }}
+                <a href="{% url 'edit_staff' staff.id %}">Edit</a>
+                <a href="{% url 'delete_staff' staff.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
